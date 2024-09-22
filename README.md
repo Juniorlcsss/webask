@@ -1,5 +1,5 @@
 # webask
-webaskis a web scraping tool with an ai prompter that is used to help you to get information off webpages and sort them within the interface.
+webask is a web scraping tool with an ai prompter that is used to help you to get information off webpages and sort them within the interface.
 took heavy inspiration from tech with tim's project especially with the implementation of ai features. Link to relevant sources within the sources.txt file
 
 
