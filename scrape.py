@@ -27,10 +27,13 @@ def scrape_page(website):
 def clear_soup(html_content):
     init_soup = BeautifulSoup(html_content, 'html.parser')
     get_body = init_soup.body
+
     if get_body is None:
-        return "" #Empty message
+        return "" #Empty message, error check done in main.py
+    
     else:
         messy_soup = BeautifulSoup(str(get_body), 'html.parser')
+
         #remove styles & scripts
         for script_or_style in messy_soup(["script", "style"]):
             script_or_style.extract()
@@ -41,8 +44,10 @@ def clear_soup(html_content):
     
 
 def split_dom_content(dom_content, max_length = max_chars):
-    # plit content into chunks of max_length
+    #split content into chunks of max_length
     chunks = [
             dom_content[i:i+max_length]
-            for i in range(0, len(dom_content), max_length)]
+            for i in range(0, len(dom_content), max_length)
+        ]
+    
     return chunks
