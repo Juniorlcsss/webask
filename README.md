@@ -5,27 +5,22 @@ took heavy inspiration from tech with tim's project especially with the implemen
 
 
 setting up environment:
-
 python -m venv env
 
 
 Installing dependencies:
-
 for python imports: (copy and paste into terminal)
 pip install -r .\dependencies.txt
 
 
 for chrome:
-
 https://googlechromelabs.github.io/chrome-for-testing/#stable
 need to have the latest chrome version installed and copy the chromedriver.exe into the project location
 
 
 for ollama:
-
 https://ollama.com/download
 
 
 running program:
-
 streamlit run .\main.py
